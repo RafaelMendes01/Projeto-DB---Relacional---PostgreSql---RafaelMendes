@@ -1,0 +1,28 @@
+{
+  "name": "projeto-db---relacional---postgresql",
+  "version": "1.0.0",
+  "description": "Projeto api rest com postgresql",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.jsnp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelMendes01/Projeto-DB---Relacional---PostgreSql---RafaelMendes.git"
+  },
+  "author": "Rafael Mendes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelMendes01/Projeto-DB---Relacional---PostgreSql---RafaelMendes/issues"
+  },
+  "homepage": "https://github.com/RafaelMendes01/Projeto-DB---Relacional---PostgreSql---RafaelMendes#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "knex": "^1.0.3",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
