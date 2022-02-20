@@ -47,6 +47,19 @@ class CaixasControllers {
     }).debug()
     return res.status(200).json(caixas);
 }
+async patch(req,res) {
+  const{
+    id, 
+    id_usuario,
+    id_produto,
+    quantidade_produto }= req.body;
+  const caixas = await this.conexao('caixa').where('id' , id).update({
+    id_usuario,
+    id_produto,
+    quantidade_produto
+  }).debug()
+  return res.status(200).json(caixas);
+}
 }
 
 module.exports = CaixasControllers;

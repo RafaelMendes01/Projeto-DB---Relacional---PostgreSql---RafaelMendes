@@ -28,6 +28,9 @@ routes.get('/usuarios/one', (req, res) => {
 routes.put('/usuarios', (req,res) =>{
   usuariosController.put(req,res)
 });
+routes.patch('/usuarios', (req,res) =>{
+  usuariosController.patch(req,res)
+});
 routes.post('/produtos', (req, res) => {
   produtosController.create(req, res)
 });
@@ -43,6 +46,9 @@ routes.get('/produtos/one', (req, res) => {
 routes.put('/produtos', (req,res) =>{
   produtosController.put(req,res)
 });
+routes.patch('/produtos', (req,res) =>{
+  produtosController.patch(req,res)
+});
 routes.post('/caixas', (req, res) => {
   caixasController.create(req, res)
 });
@@ -54,6 +60,9 @@ routes.get('/caixas', (req, res) => {
 });
 routes.get('/caixas/one', (req, res) => {
   caixasController.getOne(req, res)
+});
+routes.patch('/caixas', (req,res) =>{
+  caixasController.patch(req,res)
 });
 
 module.exports = routes;
